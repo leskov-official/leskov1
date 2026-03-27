@@ -1,0 +1,54 @@
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center; 
+}
+
+.gallery-item {
+   flex: 0 0 calc(50% - 10px);
+   animation: fadeInGallery 1s ease;
+   margin-bottom: 10px; 
+}
+
+.gallery-item img:hover {
+   transform: scale(0.9);
+}
+
+@media screen and (max-width: 768px) {
+   .gallery-item {
+      flex: 0 0 calc(100% - 20px); 
+   }
+}
+
+@keyframes fadeInGallery {
+   from {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.gallery-item img {
+   width: 100%; 
+   height: auto; 
+   border-radius: 5px;
+}
+
+form textarea {
+   width: calc(100% - 20px);
+   height: 100px;
+   margin-bottom: 10px; 
+}
+
+form button {
+   width: calc(100% - 20px);
+   background-color: #333;
+   color: #fff;
+   padding: 10px 0;
+   border: none;
+   cursor: pointer;
+}

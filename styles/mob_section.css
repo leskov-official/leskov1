@@ -1,0 +1,51 @@
+.section {
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            color: #242424; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        .section h2 {
+            color: #242424; 
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #242424;
+	    text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+		
+		.section {
+            box-shadow: 0 2px 5px rgba(51, 51, 51, 0.5);
+        }
+
+        .section a {
+            color: #242424;
+            text-decoration: underline;
+        }
+
+        .txt {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .txt1 {
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .home1 {
+            top: 2px;         
+            position: relative;        
+        }

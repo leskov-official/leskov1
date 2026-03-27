@@ -1,0 +1,93 @@
+.video-container {
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.video-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.video-container::-webkit-scrollbar-track {
+    background: #c7c7c7;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.video-container::-webkit-scrollbar-thumb {
+    background: #000000d1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.video-container::-webkit-scrollbar-thumb:hover {
+    background: #00336a;
+}
+
+.video-item {
+    flex: 0 0 calc(33.33% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-item .video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-wrapper video,
+.video-wrapper iframe,
+.video-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.video-item video,
+.video-item iframe,
+.video-item img {
+    width: 100%;
+    height: 100%; 
+    border: none;
+    border-radius: 10px;
+    object-fit: cover; 
+    display: block;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-item img {
+    transition: transform 0.3s ease;
+}
+
+.video-container button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    line-height: 0;
+    transform: translateY(-50%);
+}
+
+.video-container button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
